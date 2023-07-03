@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "post-commit": "npm version patch && git commit -am 'Update package version'"
+    "post-commit": "npm version patch && git add package.json && git commit -m 'Update package version'"
   },
   "keywords": [],
   "author": "",
