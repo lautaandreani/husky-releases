@@ -6,14 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "post-commit": "npx semantic-release --dry-run"
+    "post-commit": "npm version patch && git commit -am 'Update package version'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@semantic-release/git": "^10.0.1",
-    "husky": "^8.0.3",
-    "semantic-release": "^21.0.6"
+    "husky": "^8.0.3"
   }
 }
